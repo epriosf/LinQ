@@ -42,3 +42,31 @@ Age: 22
 Gender:F
 EnterpriseId:2
 ```
+Get people who work at Google (3 Results):
+
+|   | Person 1| Person 2| Person 3
+| ------------- | ------------- | ------------- | ------------- |
+| FirstName |  Alice  | Bob  | Charlie  |
+| LastName | Evergreen  |White  |Simmons  |
+| Age|  15  | 30  |20  |
+| Gender | F  | M  |M  |
+| EnterpriseId | 1  |1  |1  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
