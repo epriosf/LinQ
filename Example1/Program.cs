@@ -36,7 +36,7 @@ namespace Example1
             }
         }
         private static void exampleWithLinqUsingMethodSintax()
-        {
+        {// 
             int[] numbers = Enumerable.Range(1, 6).ToArray();
             Console.WriteLine(string.Join(" ", numbers));
 

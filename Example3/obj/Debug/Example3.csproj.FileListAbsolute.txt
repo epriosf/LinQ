@@ -1,0 +1,8 @@
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\bin\Debug\Example3.exe.config
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\bin\Debug\Example3.exe
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\bin\Debug\Example3.pdb
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\obj\Debug\Example3.csproj.AssemblyReference.cache
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\obj\Debug\Example3.csproj.SuggestedBindingRedirects.cache
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\obj\Debug\Example3.csproj.CoreCompileInputs.cache
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\obj\Debug\Example3.exe
+C:\Users\paulr\Escritorio\LinQ Examples\LinQ\Example3\obj\Debug\Example3.pdb

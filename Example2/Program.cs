@@ -40,9 +40,13 @@ namespace Example2
             IEnumerable<Person> femaleAbove18 = employers.Where(employer => employer.Age > 18 && employer.Gender == "F");*/
 
             // Query Sintax
+
+
             IEnumerable<Person> femaleAbove18 = from employer in employers
                                                 where employer.Age > 18 && employer.Gender == "F"
                                                 select employer;
+
+
 
             foreach (var n in femaleAbove18)
             {
@@ -67,17 +71,30 @@ namespace Example2
                 new Enterprise { Id=2, Name = "Microsoft"}
                 };
             /* Method Sintax
-            IEnumerable<Person> peopleInGoogle = employers
-            .Join(enterprises, employer => employer.EnterpriseId, enterprise => enterprise.Id, (employer, enterprise) => new { Employer = employer, Enterprise = enterprise })
-            .Where(joinResult => joinResult.Enterprise.Name == "Google")
-            .Select(joinResult => joinResult.Employer);
+            IEnumerable<Object> peopleInGoogle = employers.Join(enterprises, 
+                                                                employer => employer.EnterpriseId, 
+                                                                enterprise => enterprise.Id, 
+                                                                (employer, enterprise) => new { Employer = employer, Enterprise = enterprise })
+                                                           .Where(joinResult => joinResult.Enterprise.Name == "Google")
+                                                           .Select(joinResult => new { 
+                                                                EmployerID=joinResult.Employer.Id, 
+                                                                EmployerName=joinResult.Employer.FirstName, 
+                                                                EmployerLastName=joinResult.Employer.LastName, 
+                                                                EnterpriseName=joinResult.Enterprise.Name 
+                                                });
             */
 
             // Query Sintax
-            IEnumerable<Person> peopleInGoogle = from employer in employers
+            IEnumerable<Object> peopleInGoogle = from employer in employers
                                                  join enterprise in enterprises on employer.EnterpriseId equals enterprise.Id
                                                  where enterprise.Name == "Google"
-                                                 select employer;
+                                                 select new
+                                                 {
+                                                     EmployerId = employer.Id,
+                                                     EmployerName = employer.FirstName,
+                                                     EmployerLastName = employer.LastName,
+                                                     EnterpriseName = enterprise.Name
+                                                 };
 
             foreach (var person in peopleInGoogle)
             {
